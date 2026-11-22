@@ -33,6 +33,14 @@ categories = ["game-mechanics", "utility"]
 tags = ["vein-mining", "chain-mining", "mining", "blacklist"]
 
 [[versions]]
+version = "0.6.4"
+published = "2026-11-22"
+game = "26.3"
+file = "veinsweep-0.6.4.hmod"
+sha256 = "4935989ca58db5dcf8102fa28c551d462ec34dc69539344a8351de791c1fe0eb"
+changelog = "构建固定更新为 Nightly 2026-11-22（2b77287）与 Horizon Mixins e59da90（未变）；功能与设置不变，已在生存模式实测连锁、同种方块扩散、黑名单、上限与总开关。\n\nRepinned to Nightly 2026-11-22 (2b77287) with Horizon Mixins e59da90 (unchanged). Behaviour and settings are identical; chaining, same-type spread, the blacklist, the limit and the master switch were re-verified in-game in survival."
+
+[[versions]]
 version = "0.6.3"
 published = "2026-11-22"
 game = "26.3"
