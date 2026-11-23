@@ -9,7 +9,7 @@ VeinSweep 是连锁挖掘模组：按住触发键（默认潜行键，可在控�
 - 只在同种方块内扩散：泥土不会蔓延到草方块，沙子不会蔓延到砂砾。
 - 与手持物无关；工具在连锁中途损坏时会立即停止。
 - 黑名单：`/veinsweep blacklist add|remove|list|clear`，支持 Tab 补全，重启后仍有效；修改黑名单需要权限等级 2，`list` 公开。
-- 设置页：总开关、最大方块数（8–256）、掉落直接入包、保留工具耐久、创造模式连锁。
+- 设置页：总开关、最大方块数（8–256）、保留工具耐久、创造模式连锁。
 - 连锁由客户端按键触发，只在单人游戏或自己主持的局域网世界生效；专用服务器上不触发（模组仍会正常加载）。
 
 ---
@@ -20,7 +20,7 @@ VeinSweep is a chain-mining mod: hold the trigger key (sneak by default; rebinda
 - It only spreads through the same block type: dirt does not spread to grass, sand does not spread to gravel.
 - It works with any held item, and stops at once if the tool breaks mid-chain.
 - Blacklist: `/veinsweep blacklist add|remove|list|clear`, with tab completion and persistence across restarts. Changing it needs permission level 2; `list` is public.
-- Settings: master switch, maximum blocks (8–256), drops straight to inventory, keep tool durability, and chaining in creative mode.
+- Settings: master switch, maximum blocks (8–256), keep tool durability, and chaining in creative mode.
 - Chaining is client-triggered: it works in single player and in a LAN world you host. A dedicated server has no client key input, so chaining does not trigger there (the mod still loads).
 """
 authors = ["ChangGengCN"]
@@ -31,6 +31,14 @@ source = "https://github.com/ChangGengCN/VeinSweep"
 icon = "icons/veinsweep.png"
 categories = ["game-mechanics", "utility"]
 tags = ["vein-mining", "chain-mining", "mining", "blacklist"]
+
+[[versions]]
+version = "0.6.5"
+published = "2026-11-23"
+game = "26.3"
+file = "veinsweep-0.6.5.hmod"
+sha256 = "6eccbec432b5a665935be0e98d7ab59dd4b2eddba5a272b995a06bea86686c31"
+changelog = "移除「掉落直接入包」设置，掉落一律在世界中散落（与原开关关闭时一致）；设置页现为四项：连锁破坏、最大方块数、保留工具耐久、创造模式连锁。构建固定更新为 Nightly 2026-11-22 最新构建（f1bb66f）与 Horizon Mixins e59da90（未变），已在生存模式实测连锁触发、同种方块扩散、矿脉整条带走、上限、黑名单、总开关与工具中途损坏即停。\n\nRemoved the \"Drops go to inventory\" setting; drops always scatter in the world (the behaviour of the old switch when off). The settings screen now has four entries: chain breaking, maximum blocks, keep tool durability, and chaining in creative mode. Repinned to the newest Nightly 2026-11-22 build (f1bb66f) with Horizon Mixins e59da90 (unchanged); chaining, same-type spread, whole-vein mining, the limit, the blacklist, the master switch and stopping when the tool breaks were re-verified in-game in survival."
 
 [[versions]]
 version = "0.6.4"
